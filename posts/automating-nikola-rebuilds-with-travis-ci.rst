@@ -108,6 +108,14 @@ Finally, commit everything to GitHub.
 
     $ git add .
     $ git commit -am "Automate builds with Travis CI"
+    $ git push
 
+
+Watch Travis CI do its job
+==========================
+
+After a couple of minutes, your site should be good to go.
+
+Check the status of your builds at `<https://travis-ci.org/>`_
 
 
