@@ -15,6 +15,7 @@
 <link rel="canonical" href="https://matslangoh.github.io/ja/posts/deploying-nikola-to-github/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Matthias Lambrecht">
 <link rel="prev" href="../how-to-get-started-with-nikola/" title="How to get started with Nikola" type="text/html">
+<link rel="next" href="../automating-nikola-rebuilds-with-travis-ci/" title="Automating Nikola rebuilds with Travis CI" type="text/html">
 <meta property="og:site_name" content="The Pym Particle">
 <meta property="og:title" content="Deploying Nikola to GitHub">
 <meta property="og:url" content="https://matslangoh.github.io/ja/posts/deploying-nikola-to-github/">
@@ -118,9 +119,9 @@ following name: <tt class="docutils literal">&lt;Your Github <span class="pre">U
 <div class="section" id="initialize-a-git-repository-in-your-nikola-source-directory">
 <h2>Initialize a git repository in your Nikola source directory</h2>
 <p>Now go to your Nikola source directory and run the following commands.</p>
-<pre class="code text"><a name="rest_code_0e534a56dcd94006a990e4d256d3a73c-1"></a>$ git init .
-<a name="rest_code_0e534a56dcd94006a990e4d256d3a73c-2"></a>$ git remote add origin git@github.com:&lt;Your Github Username&gt;/&lt;Your Github
-<a name="rest_code_0e534a56dcd94006a990e4d256d3a73c-3"></a>Username&gt;.github.io.git
+<pre class="code text"><a name="rest_code_b87379ef825649f2a22189a9dce2599e-1"></a>$ git init .
+<a name="rest_code_b87379ef825649f2a22189a9dce2599e-2"></a>$ git remote add origin git@github.com:&lt;Your Github Username&gt;/&lt;Your Github
+<a name="rest_code_b87379ef825649f2a22189a9dce2599e-3"></a>Username&gt;.github.io.git
 </pre>
 </div>
 <div class="section" id="setup-branches-and-remotes-in-conf-py">
@@ -138,10 +139,10 @@ to go, but have a look at the following items in <cite>conf.py</cite>.</p>
 <div class="section" id="create-a-gitignore-file">
 <h2>Create a <tt class="docutils literal">.gitignore</tt> file</h2>
 <p>Add at least the following entries.</p>
-<pre class="code text"><a name="rest_code_c6b13d80c8f14b6e983b0848e30f15d0-1"></a>cache
-<a name="rest_code_c6b13d80c8f14b6e983b0848e30f15d0-2"></a>.doit.db
-<a name="rest_code_c6b13d80c8f14b6e983b0848e30f15d0-3"></a>__pycache__
-<a name="rest_code_c6b13d80c8f14b6e983b0848e30f15d0-4"></a>output
+<pre class="code text"><a name="rest_code_980681395297487bb1673bfa94bcc013-1"></a>cache
+<a name="rest_code_980681395297487bb1673bfa94bcc013-2"></a>.doit.db
+<a name="rest_code_980681395297487bb1673bfa94bcc013-3"></a>__pycache__
+<a name="rest_code_980681395297487bb1673bfa94bcc013-4"></a>output
 </pre>
 </div>
 <div class="section" id="and-finally-deploy">
@@ -159,6 +160,9 @@ running very soon.</p>
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../how-to-get-started-with-nikola/" rel="prev" title="How to get started with Nikola">一つ前の文書</a>
+            </li>
+            <li class="next">
+                <a href="../automating-nikola-rebuilds-with-travis-ci/" rel="next" title="Automating Nikola rebuilds with Travis CI">次の文書</a>
             </li>
         </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2018         <a href="mailto:mats.lan.pod+pym@googlemail.com">Matthias Lambrecht</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
