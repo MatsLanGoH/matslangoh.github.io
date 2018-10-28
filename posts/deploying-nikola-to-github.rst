@@ -24,7 +24,7 @@ Initialize a git repository in your Nikola source directory
 
 Now go to your Nikola source directory and run the following commands.
 
-.. code::
+.. code-block:: console
 
   $ git init .
   $ git remote add origin git@github.com:<Your Github Username>/<Your Github
@@ -46,7 +46,7 @@ Create a ``.gitignore`` file
 
 Add at least the following entries.
 
-.. code::
+.. code-block:: console
 
   cache
   .doit.db
