@@ -21,7 +21,7 @@ Setting up Nikola
 
 We need to make **one important change** to our ``config.py``. 
 
-.. code::
+.. code-block:: 
 
   GITHUB_COMMIT_SOURCE = False
 
@@ -35,7 +35,7 @@ First, let's install ``ruby`` and ``gem`` if we don't have them.
 Next, let's get ``travis.yml`` from https://getnikola.com/blog/automating-nikola-rebuilds-with-travis-ci.html and save it as ``.travis.yml``
 Then, update these lines
 
-  .. code::
+  .. code-block:: console
 
     git config --global user.name 'Your Username'
     git config --global user.email 'Your email'
@@ -44,7 +44,7 @@ Then, update these lines
 If you want extra languages, add the correct packages under the following
 section.
 
-  .. code::
+  .. code-block::
 
     addons:
       apt:
@@ -53,7 +53,7 @@ section.
 
 Next, let's generate a SSH key for Travis CI
 
-  .. code::
+  .. code-block:: console
 
     echo id_rsa >> .gitignore
     echo id_rsa.pub >> .gitignore
@@ -67,13 +67,13 @@ Playing nice with Ruby
 
 Install the ``travis`` gem.
 
-  .. code::
+  .. code-block:: console
 
     gem install --user-install travis
 
 We can now use the Travis CI command-line client to `log in`, `enable the repository`, and `encrypt our SSH key`.
 
-  .. code::
+  .. code-block:: console
 
     $ travis login
 
@@ -104,7 +104,7 @@ We can now use the Travis CI command-line client to `log in`, `enable the reposi
 
 Finally, commit everything to GitHub.
 
-  .. code::
+  .. code-block:: console
 
     $ git add .
     $ git commit -am "Automate builds with Travis CI"

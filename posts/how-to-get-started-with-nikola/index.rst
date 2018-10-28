@@ -27,7 +27,7 @@ I've initially built my site on macOS, so here's the basic requirements.
 
 Then follow these instructions.
 
-.. code::
+.. code-block:: console
 
   $ virtualenv3 ~./virtualenvs/nikola
   $ source ~/.virtualenvs/nikola/bin/activate
