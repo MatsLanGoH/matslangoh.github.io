@@ -7,128 +7,150 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://matslangoh.github.io/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/2018/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/archive.html</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/categories/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/categories/blog/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/categories/cat_blog/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/categories/nikola/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/2018/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/archive.html</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/categories/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/categories/blog/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/categories/cat_blog/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/categories/nikola/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/posts/automating-nikola-rebuilds-with-travis-ci/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://matslangoh.github.io/posts/automating-nikola-rebuilds-with-travis-ci/" />
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/posts/deploying-nikola-to-github/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://matslangoh.github.io/posts/deploying-nikola-to-github/" />
  </url>
  <url>
   <loc>https://matslangoh.github.io/de/posts/how-to-get-started-with-nikola/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://matslangoh.github.io/posts/how-to-get-started-with-nikola/" />
  </url>
  <url>
+  <loc>https://matslangoh.github.io/de/posts/the-self-taught-programmer/</loc>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="ja" href="https://matslangoh.github.io/ja/posts/the-self-taught-programmer/" />
+ </url>
+ <url>
   <loc>https://matslangoh.github.io/ja/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/2018/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/archive.html</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/categories/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://matslangoh.github.io/ja/categories/beproud/</loc>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/categories/blog/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/categories/cat_blog/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/categories/nikola/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://matslangoh.github.io/ja/categories/self-taught/</loc>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/posts/automating-nikola-rebuilds-with-travis-ci/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://matslangoh.github.io/posts/automating-nikola-rebuilds-with-travis-ci/" />
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/posts/deploying-nikola-to-github/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://matslangoh.github.io/posts/deploying-nikola-to-github/" />
  </url>
  <url>
   <loc>https://matslangoh.github.io/ja/posts/how-to-get-started-with-nikola/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
   <xhtml:link rel="alternate" hreflang="en" href="https://matslangoh.github.io/posts/how-to-get-started-with-nikola/" />
  </url>
  <url>
+  <loc>https://matslangoh.github.io/ja/posts/the-self-taught-programmer/</loc>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://matslangoh.github.io/posts/automating-nikola-rebuilds-with-travis-ci/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/posts/deploying-nikola-to-github/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://matslangoh.github.io/posts/how-to-get-started-with-nikola/</loc>
-  <lastmod>2018-12-23T18:50:00Z</lastmod>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://matslangoh.github.io/posts/the-self-taught-programmer/</loc>
+  <lastmod>2018-12-23T23:50:00Z</lastmod>
+  <xhtml:link rel="alternate" hreflang="ja" href="https://matslangoh.github.io/ja/posts/the-self-taught-programmer/" />
  </url>
 </urlset>
