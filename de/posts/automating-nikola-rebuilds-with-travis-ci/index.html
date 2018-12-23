@@ -115,7 +115,7 @@ integration, we can do just that.</p>
 <div class="section" id="setting-up-nikola">
 <h2>Setting up Nikola</h2>
 <p>We need to make <strong>one important change</strong> to our <tt class="docutils literal">config.py</tt>.</p>
-<pre class="code text"><a name="rest_code_a1fd8fc1441a440fbcdb15008e637905-1"></a>GITHUB_COMMIT_SOURCE = False
+<pre class="code text"><a name="rest_code_43b219083f0b46978df5b65c26371920-1"></a>GITHUB_COMMIT_SOURCE = False
 </pre>
 <p>Without this change, Travis CI is going to get trapped in an infinite loop.</p>
 </div>
@@ -125,25 +125,25 @@ integration, we can do just that.</p>
 <p>Next, let's get <tt class="docutils literal">travis.yml</tt> from <a class="reference external" href="https://getnikola.com/blog/automating-nikola-rebuilds-with-travis-ci.html">https://getnikola.com/blog/automating-nikola-rebuilds-with-travis-ci.html</a> and save it as <tt class="docutils literal">.travis.yml</tt>
 Then, update these lines</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_1b1ba72a4bea4f578d2360edfa9a2c20-1"></a><span class="go">git config --global user.name 'Your Username'</span>
-<a name="rest_code_1b1ba72a4bea4f578d2360edfa9a2c20-2"></a><span class="go">git config --global user.email 'Your email'</span>
-<a name="rest_code_1b1ba72a4bea4f578d2360edfa9a2c20-3"></a><span class="go">git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO.git</span>
+<pre class="code console"><a name="rest_code_c25373ecab864ccd8e2d8aead644e208-1"></a><span class="go">git config --global user.name 'Your Username'</span>
+<a name="rest_code_c25373ecab864ccd8e2d8aead644e208-2"></a><span class="go">git config --global user.email 'Your email'</span>
+<a name="rest_code_c25373ecab864ccd8e2d8aead644e208-3"></a><span class="go">git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO.git</span>
 </pre>
 </blockquote>
 <p>If you want extra languages, add the correct packages under the following
 section.</p>
 <blockquote>
-<pre class="code text"><a name="rest_code_6de32e83a62d431d90c236f9b0cdb737-1"></a>addons:
-<a name="rest_code_6de32e83a62d431d90c236f9b0cdb737-2"></a>  apt:
-<a name="rest_code_6de32e83a62d431d90c236f9b0cdb737-3"></a>    packages:
-<a name="rest_code_6de32e83a62d431d90c236f9b0cdb737-4"></a>    - language-pack-en-base
+<pre class="code text"><a name="rest_code_85bde34c86ab4a9bbf6fd95d706c3752-1"></a>addons:
+<a name="rest_code_85bde34c86ab4a9bbf6fd95d706c3752-2"></a>  apt:
+<a name="rest_code_85bde34c86ab4a9bbf6fd95d706c3752-3"></a>    packages:
+<a name="rest_code_85bde34c86ab4a9bbf6fd95d706c3752-4"></a>    - language-pack-en-base
 </pre>
 </blockquote>
 <p>Next, let's generate a SSH key for Travis CI</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_9954f1a64f04419884d5cca44c754d73-1"></a><span class="go">echo id_rsa &gt;&gt; .gitignore</span>
-<a name="rest_code_9954f1a64f04419884d5cca44c754d73-2"></a><span class="go">echo id_rsa.pub &gt;&gt; .gitignore</span>
-<a name="rest_code_9954f1a64f04419884d5cca44c754d73-3"></a><span class="go">ssh-keygen -C TravisCI -f id_rsa -N ''</span>
+<pre class="code console"><a name="rest_code_975180872d7140438fc26c8f726b8df1-1"></a><span class="go">echo id_rsa &gt;&gt; .gitignore</span>
+<a name="rest_code_975180872d7140438fc26c8f726b8df1-2"></a><span class="go">echo id_rsa.pub &gt;&gt; .gitignore</span>
+<a name="rest_code_975180872d7140438fc26c8f726b8df1-3"></a><span class="go">ssh-keygen -C TravisCI -f id_rsa -N ''</span>
 </pre>
 </blockquote>
 <p>Copy the contents of <tt class="docutils literal">id_rsa.pub</tt> and add them to <cite>Github -&gt; Your Page
@@ -153,44 +153,44 @@ Repository -&gt; Settings -&gt; Deploy keys</cite>. Make sure, <cite>Allow write
 <h2>Playing nice with Ruby</h2>
 <p>Install the <tt class="docutils literal">travis</tt> gem.</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_97adb2e05fe94bc091fc0553ce4f6ff7-1"></a><span class="go">gem install --user-install travis</span>
+<pre class="code console"><a name="rest_code_00e8f9657c734714817c9a37ab541dcf-1"></a><span class="go">gem install --user-install travis</span>
 </pre>
 </blockquote>
 <p>We can now use the Travis CI command-line client to <cite>log in</cite>, <cite>enable the repository</cite>, and <cite>encrypt our SSH key</cite>.</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-1"></a><span class="gp">$</span> travis login
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-2"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-3"></a><span class="go">We need your GitHub login to identify you.</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-4"></a><span class="go">This information will not be sent to Travis CI, only to api.github.com.</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-5"></a><span class="go">The password will not be displayed.</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-6"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-7"></a><span class="go">Try running with --github-token or --auto if you don't want to enter your password anyway.</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-8"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-9"></a><span class="go">Username: MyUsername</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-10"></a><span class="go">Password for MyUsername: ********************************************************</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-11"></a><span class="go">Successfully logged in as MyUsername!</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-12"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-13"></a><span class="gp">$</span> travis <span class="nb">enable</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-14"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-15"></a><span class="go">Detected repository as MyUsername/myusername.github.io, is this correct? |yes| yes</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-16"></a><span class="go">MyUsername/myusername.github.io: enabled :)</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-17"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-18"></a><span class="gp">$</span> travis encrypt-file id_rsa --add
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-19"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-20"></a><span class="go">encrypting id_rsa for MyUsername/myusername.github.io</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-21"></a><span class="go">storing result as id_rsa.enc</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-22"></a><span class="go">storing secure env variables for decryption</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-23"></a>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-24"></a><span class="go">Make sure to add id_rsa.enc to the git repository.</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-25"></a><span class="go">Make sure not to add id_rsa to the git repository.</span>
-<a name="rest_code_9249c8eba4ab4e7f8a7cec91359a3fbf-26"></a><span class="go">Commit all changes to your .travis.yml.</span>
+<pre class="code console"><a name="rest_code_3b4c104d25134352baa2a19f55513130-1"></a><span class="gp">$</span> travis login
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-2"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-3"></a><span class="go">We need your GitHub login to identify you.</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-4"></a><span class="go">This information will not be sent to Travis CI, only to api.github.com.</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-5"></a><span class="go">The password will not be displayed.</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-6"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-7"></a><span class="go">Try running with --github-token or --auto if you don't want to enter your password anyway.</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-8"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-9"></a><span class="go">Username: MyUsername</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-10"></a><span class="go">Password for MyUsername: ********************************************************</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-11"></a><span class="go">Successfully logged in as MyUsername!</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-12"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-13"></a><span class="gp">$</span> travis <span class="nb">enable</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-14"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-15"></a><span class="go">Detected repository as MyUsername/myusername.github.io, is this correct? |yes| yes</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-16"></a><span class="go">MyUsername/myusername.github.io: enabled :)</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-17"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-18"></a><span class="gp">$</span> travis encrypt-file id_rsa --add
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-19"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-20"></a><span class="go">encrypting id_rsa for MyUsername/myusername.github.io</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-21"></a><span class="go">storing result as id_rsa.enc</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-22"></a><span class="go">storing secure env variables for decryption</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-23"></a>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-24"></a><span class="go">Make sure to add id_rsa.enc to the git repository.</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-25"></a><span class="go">Make sure not to add id_rsa to the git repository.</span>
+<a name="rest_code_3b4c104d25134352baa2a19f55513130-26"></a><span class="go">Commit all changes to your .travis.yml.</span>
 </pre>
 </blockquote>
 <p>Finally, commit everything to GitHub.</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_040f8604c2c74a778edde8012d559c9f-1"></a><span class="gp">$</span> git add .
-<a name="rest_code_040f8604c2c74a778edde8012d559c9f-2"></a><span class="gp">$</span> git commit -am <span class="s2">"Automate builds with Travis CI"</span>
-<a name="rest_code_040f8604c2c74a778edde8012d559c9f-3"></a><span class="gp">$</span> git push
+<pre class="code console"><a name="rest_code_6f84510222d54d24bfcf944f78250341-1"></a><span class="gp">$</span> git add .
+<a name="rest_code_6f84510222d54d24bfcf944f78250341-2"></a><span class="gp">$</span> git commit -am <span class="s2">"Automate builds with Travis CI"</span>
+<a name="rest_code_6f84510222d54d24bfcf944f78250341-3"></a><span class="gp">$</span> git push
 </pre>
 </blockquote>
 </div>
