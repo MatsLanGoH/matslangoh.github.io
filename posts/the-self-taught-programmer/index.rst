@@ -1,19 +1,14 @@
 .. title: The Self-Taught Programmer
 .. slug: the-self-taught-programmer
-.. date: 2018-12-24 07:30:00 UTC+09:00
-.. tags: self-taught, blog, beproud
+.. date: 2018-12-24 02:27:41 UTC+09:00
+.. tags: self-taught 
 .. category: blog
 .. link: https://matslangoh.github.io/posts/the-self-taught-programmer/
-.. description: 独学プログラマーの振り返り
+.. description: 
 .. type: text
 .. author: Matthias Lambrecht
 
-今年の4月に `BeProud
-<https://www.beproud.jp>`_ に入社しました。３０代後半で、はじめての転職、そしてはじめてソフトウェアエンジニアとしての仕事となりました。
-その前は大学の教職員をやっていましたが、自分のやりたいことが合わなくなって、独学でプログラミングを勉強し始めました。
-いわゆる「独学プログラマー」の道を歩んで来ましたが、少し仕事になれたところで簡単に振り返ってみたいと思っています。
-
-（これは `BeProud Advent Calendar 2018 <https://adventar.org/calendars/3338>`_ 24日目の記事です)
+This is a post for the `BeProud Advent Calendar 2018 <https://adventar.org/calendars/3338>`_ (Day 24).
 
 .. TEASER_END
 
@@ -53,7 +48,7 @@ BeProudに入ってからは `Python Challenge` という、未経験に近い�
 
 独りで学習・開発している時は、それぞれあまり気にしていなかったですが、チーム体制になるとどれも欠かせないものばかりです。「ずっと独りで黙って作業する」は、独学ならではのスタイルですが、チームで共同作業する時は「いない」と思われがちなので、コミュニケーションを意識する必要はあります。
 
-また、技術的な内容についてはBeProudの先輩たちが書いてくれた `Pythonプロフェッショナルプログラミング 第3版 <http://amzn.asia/d/4tN5goC>`_ も、かなり読み応えはあります。実務経験がなかった自分にとってはタイムリーな書籍で、参考になることがとても多買ったです。
+また、技術的な内容についてはBeProudの先輩たちが書いてくれた `Pythonプロフェッショナルプログラミング 第3版 <http://amzn.asia/d/4tN5goC>`_ も、かなり読み応えはあります。実務経験がなかった自分にとってはタイムリーな書籍で、参考になることがとても多かったです。
 
 入社して９ヶ月目ですが、これからも、日々「学習」をし続けていきます。このブログはまだ作り途中ですが、身につけてきたことなど、少しずつここで公開して行きたいと思っています。
 
